@@ -1,0 +1,21 @@
+{
+    "name": "edspc/module-clientip",
+    "description": "Show client IP address on frontend.",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Eduard Muradov",
+            "email": "muudmik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Edspc\\ClientIP\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
