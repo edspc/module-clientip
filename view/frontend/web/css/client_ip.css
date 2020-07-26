@@ -1,0 +1,7 @@
+@media only screen and (max-width: 768px) {
+    .nav-sections .header.links li.client-ip {
+        border-top: 1px solid #d1d1d1;
+        font-weight: 700;
+        padding: .8rem 20px;
+    }
+}

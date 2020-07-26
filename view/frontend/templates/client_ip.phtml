@@ -1,0 +1,14 @@
+<?php
+/**
+ * @var $block \Magento\Framework\View\Element\Template
+ */
+?>
+<li class="client-ip" data-bind="scope: 'clientIpAddress'">
+    <!-- ko if: visible() -->
+    <!-- ko i18n: 'Your IP:'--><!-- /ko -->
+        <b data-bind="text: ipAddr, click: invalidate"></b>
+    <!-- /ko -->
+    <script type="text/x-magento-init">
+    {"li.client-ip": {"Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>}}
+    </script>
+</li>
