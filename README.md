@@ -14,7 +14,9 @@ Show client IP address in customer bar.
 
 ### Type 1: Zip file
 
- - Unzip the zip file in `app/code/Edspc`
+ - Download latest [master branch](https://github.com/edspc/module-clientip/archive/master.zip)
+ - Create code directory `mkdir app/code/Edspc/ClientIP -p`
+ - Unzip the zip in `app/code/Edspc/ClientIP`
  - Enable the module by running `bin/magento module:enable Edspc_ClientIP`
  - Apply database updates by running `bin/magento setup:upgrade`\*
  - Flush the cache by running `bin/magento cache:flush`

@@ -4,5 +4,6 @@
  */
 ?>
 <li class="client-ip">
-	<span>Your IP: <?= $block->getIP() ?></span>
+    <span>Your IP:</span>
+    <b><?= $block->escapeHtml($block->getIP()) ?></b>
 </li>
