@@ -1,9 +1,14 @@
 <?php
 /**
- * @var $block \Edspc\ClientIP\Block\ClientIP
+ * @var $block \Magento\Framework\View\Element\Template
  */
 ?>
-<li class="client-ip">
-    <span>Your IP:</span>
-    <b><?= $block->escapeHtml($block->getIP()) ?></b>
+<li class="client-ip" data-bind="scope: 'clientIpAddress'">
+    <!-- ko if: visible() -->
+    <!-- ko i18n: 'Your IP:'--><!-- /ko -->
+        <b data-bind="text: ipAddr"></b>
+    <!-- /ko -->
+    <script type="text/x-magento-init">
+    {"li.client-ip": {"Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>}}
+    </script>
 </li>

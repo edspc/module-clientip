@@ -6,7 +6,17 @@
     </head>
     <body>
         <referenceBlock name="header.links">
-            <block class="Edspc\ClientIP\Block\ClientIP" name="header.client_ip" template="Edspc_ClientIP::client_ip.phtml" after="customer"/>
+            <block class="Magento\Framework\View\Element\Template" name="header.client_ip" template="Edspc_ClientIP::client_ip.phtml" after="customer">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="clientIpAddress" xsi:type="array">
+                                <item name="component" xsi:type="string">Edspc_ClientIP/js/client-ip-addr</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
         </referenceBlock>
     </body>
 </page>

@@ -11,6 +11,10 @@
             "email": "muudmik@gmail.com"
         }
     ],
+    "require": {
+        "magento/framework": "*",
+        "ext-json": "*"
+    },
     "autoload": {
         "psr-4": {
             "Edspc\\ClientIP\\": ""
